@@ -2,103 +2,7 @@
 
 /***** mixins *****/
 
-/***** mixins *****/
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-Black.woff") format("woff"), url("../fonts/SourceSansPro-Black.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProItalic";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-BlackItalic.woff") format("woff"), url("../fonts/SourceSansPro-BlackItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProBold";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "SourceSansProBoldItalic";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-BoldItalic.woff") format("woff"), url("../fonts/SourceSansPro-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "SourceSansProExtraLight";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-ExtraLight.woff") format("woff"), url("../fonts/SourceSansPro-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProExtraLightItalic";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-ExtraLightItalic.woff") format("woff"), url("../fonts/SourceSansPro-ExtraLightItalic.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProItalic";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-Italic.woff") format("woff"), url("../fonts/SourceSansPro-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProLight";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-Light.woff") format("woff"), url("../fonts/SourceSansPro-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProLightItalic";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-LightItalic.woff") format("woff"), url("../fonts/SourceSansPro-LightItalic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProRegular";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProSemiBold";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansProSemiBoldItalic";
-  font-display: swap;
-  src: url("../fonts/SourceSansPro-SemiBoldItalic.woff") format("woff"), url("../fonts/SourceSansPro-SemiBoldItalic.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
+/***** imports *****/
 
 /* Слайдер */
 
@@ -345,7 +249,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: SourceSansProRegular;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
   overflow-x: hidden;
@@ -377,41 +281,24 @@ body {
           justify-content: space-between;
 }
 
-.buttons .down-btn,
 .buttons .view-btn {
   width: 160px;
   height: 50px;
   border-radius: 3px;
   outline: none;
-  font-family: SourceSansProBold;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
-}
-
-.buttons .down-btn {
-  -webkit-box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
-          box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
-  background-color: #008ed6;
-  border: none;
-}
-
-.buttons .view-btn {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: transparent;
 }
 
-.buttons button {
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.buttons button:hover {
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
-  opacity: 0.8;
+.buttons .view-btn:hover {
+  -webkit-box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+          box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+  background-color: #008ed6;
+  border: none;
 }
 
 /***** buttons *****/
@@ -420,8 +307,8 @@ body {
 
 .smalltitle {
   color: #008ed6;
-  font-family: SourceSansProBold;
   font-size: 14px;
+  font-weight: 700;
   line-height: 45px;
   text-transform: uppercase;
 }
@@ -493,20 +380,20 @@ body {
 
 .home .introducing__smalltitle {
   margin-top: 66px;
+  margin-bottom: 7px;
   letter-spacing: 1.4px;
 }
 
 .home .introducing__title {
-  font-size: 46px;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: 1.58px;
+  line-height: 47px;
   color: #fff;
 }
 
 .home .introducing__text {
   width: 478px;
-  margin: 23px 0 59px;
+  margin: 25px 0 59px;
 }
 
 .home__devices {
@@ -644,7 +531,7 @@ body {
 
 .home .header-row .menu-nav__link {
   position: relative;
-  font-family: SourceSansProSemiBold;
+  font-weight: 600;
   line-height: 20px;
   color: #fffefe;
 }
@@ -676,16 +563,10 @@ body {
 
 .home .header-row .menu-nav__link:hover {
   text-decoration: none;
-  color: #008ed6;
 }
 
 .home .header-row .menu-nav__link:hover::before,
 .home .header-row .menu-nav__link:hover::after {
-  display: inline-block !important;
-}
-
-.home .header-row .menu-nav .active-link::before,
-.home .header-row .menu-nav .active-link::after {
   display: inline-block !important;
 }
 
@@ -708,7 +589,7 @@ body {
   left: -3px;
   margin-bottom: 120px;
   line-height: 20px;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.9px;
 }
 
 .features .items .item {
@@ -786,7 +667,7 @@ body {
 }
 
 .about-long .details__title {
-  letter-spacing: 1.3px;
+  letter-spacing: 0.9px;
 }
 
 .about-long .details__title .underline {
@@ -864,7 +745,7 @@ body {
 }
 
 .about-short .details__title {
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
 }
 
 .about-short .details__title .underline {
@@ -910,7 +791,7 @@ body {
 .testimonials .header__title {
   margin: 14px 0 135px 57px;
   line-height: 8px;
-  letter-spacing: 1.36px;
+  letter-spacing: 0.9px;
   color: #fff;
 }
 
@@ -986,12 +867,11 @@ body {
 
 .eye-catcher .text__like {
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .eye-catcher .text__get {
-  font-family: SourceSansProExtraLight;
-  letter-spacing: 0.19px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
 }
 
 .eye-catcher .buttons {
@@ -1035,7 +915,8 @@ body {
 .prising .header__title {
   margin: 6px 0 117px 0;
   line-height: 8px;
-  letter-spacing: 1.4px;
+  font-size: 35px;
+  letter-spacing: 0.5px;
 }
 
 .prising .plans {
@@ -1063,8 +944,8 @@ body {
   height: 70px;
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
-  font-family: SourceSansProBold;
   font-size: 24px;
+  font-weight: 700;
   text-align: center;
   line-height: 73px;
   text-transform: uppercase;
@@ -1093,6 +974,10 @@ body {
   color: #008ed6;
 }
 
+.prising .plans .item .buttons .oreder-btn:hover {
+  color: #fff;
+}
+
 .prising .plans .item_active__title {
   color: #008ed6;
   border-bottom: none;
@@ -1113,6 +998,12 @@ body {
 .prising .plans .item_active__oreder-btn {
   background-color: #008ed6;
   color: #fff;
+}
+
+.prising .plans .item_active__oreder-btn:hover {
+  width: 164px;
+  height: 52px;
+  opacity: 0.8;
 }
 
 .prising .plans .price {
@@ -1278,8 +1169,8 @@ body {
 
 .contactUs .form-row .form .info__input:focus,
 .contactUs .form-row .form .form__area:focus {
-  background-color: #008ed6;
   opacity: 1;
+  border: 1px solid #008ed6;
 }
 
 .contactUs .form-row .form .info__input:focus::-webkit-input-placeholder, .contactUs .form-row .form .form__area:focus::-webkit-input-placeholder {
@@ -1358,20 +1249,16 @@ body {
 .footer .content__icon {
   margin: 0 14px;
   font-size: 18px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   opacity: 0.2;
   color: #fff;
 }
 
 .footer .content__icon:hover {
   opacity: 1;
-}
-
-.footer .content .fa-twitter {
   color: #008ed6;
-  opacity: 1;
 }
 
 .footer .content span {
