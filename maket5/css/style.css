@@ -1630,7 +1630,11 @@ body {
   }
 
   .contactUs .header__title {
-    margin: 0 50px 60px;
+    margin: 0 50px 90px;
+  }
+
+  .contactUs .header__title .underline {
+    bottom: -30px;
   }
 
   .contactUs .item__img-wrapper {
